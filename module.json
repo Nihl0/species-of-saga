@@ -1,0 +1,18 @@
+{
+  "id": "species-of-saga",
+  "title": "Species of Saga",
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "11",
+    "verified": "11"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "wfrp4e",
+        "type": "system",
+        "compatibility": {}
+      }
+    ]
+  }
+}
