@@ -127,33 +127,8 @@ Hooks.on("setup", () => {
             },
         },
         guzik: {
-            kras: {
-                name: "Kras",
-                skills: [
-                    "Channelling (Ulgu)",
-                    "Charm",
-                    "Consume Alcohol",
-                    "Dodge",
-                    "Entertain (Any)",
-                    "Language (Guzik)",
-                    "Lore (Herbs)",
-                    "Outdoor Survival",
-                    "Perception",
-                    "Ranged (Any)",
-                    "Stealth (Any)",
-                    "Trade (Cook)"
-                ],
-                talents: [
-                    "Acute Sense (Sight)",
-                    "Resistance (Disease)",
-                    "Second Sight, Sixth Sense",
-                    "Small",
-                    "Suffused with Ulgu",
-                    1
-                ]
-            },
-            tannish: {
-                name: "Tannish",
+            domovoy: {
+                name: "Domovoy",
                 skills: [
                     "Charm",
                     "Dodge",
@@ -174,6 +149,31 @@ Hooks.on("setup", () => {
                     "Luck",
                     "Resistance (Disease)",
                     "Small",
+                    1
+                ]
+            },
+            vilenjak: {
+                name: "Vilenjak",
+                skills: [
+                    "Channelling (Ulgu)",
+                    "Charm",
+                    "Consume Alcohol",
+                    "Dodge",
+                    "Entertain (Any)",
+                    "Language (Guzik)",
+                    "Lore (Herbs)",
+                    "Outdoor Survival",
+                    "Perception",
+                    "Ranged (Any)",
+                    "Stealth (Any)",
+                    "Trade (Cook)"
+                ],
+                talents: [
+                    "Acute Sense (Sight)",
+                    "Resistance (Disease)",
+                    "Second Sight, Sixth Sense",
+                    "Small",
+                    "Suffused with Ulgu",
                     1
                 ]
             },
