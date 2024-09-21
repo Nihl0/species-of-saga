@@ -3,21 +3,19 @@
   "title": "Species of Saga",
   "version": "2.0.0",
   "compatibility": {
-    "minimum": "11",
-    "verified": "11"
+      "minimum": "11",
+      "verified": "11"
   },
-
   "relationships": {
-    "systems": [
-      {
-        "id": "wfrp4e",
-        "type": "system",
-        "compatibility": {}
-      }
-    ]
+      "systems": [
+          {
+              "id": "wfrp4e",
+              "type": "system",
+              "compatibility": {}
+          }
+      ]
   },
-  
   "scripts": [
-  "scripts/species.js"
+      "scripts/species.js"
   ]
 }
