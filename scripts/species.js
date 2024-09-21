@@ -1,4 +1,3 @@
-
 Hooks.on("setup", () => {
     const WFRP4E = game.wfrp4e.config
 
@@ -7,7 +6,7 @@ Hooks.on("setup", () => {
         "human": "Human",
         "rogatyy": "Rogatyy",
         "guzik": "Guzik",
-        "drude": "Drude",
+        "vodya": "Vodya",
     };
 
     WFRP4E.subspecies = {
@@ -91,7 +90,7 @@ Hooks.on("setup", () => {
                     "Haggle",
                     "Language (Arnsmen)",
                     "Language (Pavise)",
-                    "Language (Thien)",
+                    "Language (Marcher)",
                     "Lore (Any)",
                     "Melee (Basic)",
                     "Ranged (Crossbow)"
@@ -102,17 +101,17 @@ Hooks.on("setup", () => {
                     3
                 ]
             },
-            thien: {
-                name: "Thien",
+            marcher: {
+                name: "Marcher",
                 skills: [
                     "Charm",
                     "Cool",
                     "Evaluate",
                     "Gossip",
                     "Language (Pavise)",
-                    "Language (Thien)",
+                    "Language (Marcher)",
                     "Leadership",
-                    "Lore (Thien)",
+                    "Lore (Marcher)",
                     "Melee (Basic)",
                     "Outdoor Survival",
                     "Ranged (Bow)",
@@ -176,8 +175,60 @@ Hooks.on("setup", () => {
                     "Suffused with Ulgu",
                     1
                 ]
+            }
+        },
+        vodya: {
+            imperial: {
+                name: "Imperial",
+                skills: [
+                    "Cool",
+                    "Evaluate",
+                    "Language (Vodya)",
+                    "Leadership",
+                    "Melee (Basic)",
+                    "Navigation",
+                    "Perception",
+                    "Play (any one)",
+                    "Ranged (Bow)",
+                    "Track",
+                    "Sail",
+                    "Swim"
+                ],
+                talents: [
+                    "Acute Sense (Sight)",
+                    "Coolheaded, Savvy",
+                    "Night Vision",
+                    "Second Sight, Sixth Sense",
+                    "Read/Write",
+                    0
+                ]
             },
-        } 
+            riverfolk: {
+                name: "Riverfolk",
+                skills: [
+                    "Athletics",
+                    "Climb",
+                    "Endurance",
+                    "Language (Vodya)",
+                    "Melee (Basic)",
+                    "Outdoor Survival",
+                    "Perception",
+                    "Ranged (Bow)",
+                    "Stealth (Rural)",
+                    "Track",
+                    "Sail",
+                    "Swim"
+                ],
+                talents: [
+                    "Acute Sense (Sight)",
+                    "Hardy, Second Sight",
+                    "Night Vision",
+                    "Read/Write, Very Resilient",
+                    "Rover",
+                    0
+                ]
+            }
+        }
     }
 
     WFRP4E.speciesCharacteristics = {
@@ -217,7 +268,7 @@ Hooks.on("setup", () => {
             "wp": "2d10+40",
             "fel": "2d10+15"
         },
-        "drude": {
+        "vodya": {
             "ws": "2d10+30",
             "bs": "2d10+30",
             "s": "2d10+20",
@@ -236,11 +287,11 @@ Hooks.on("setup", () => {
             "Animal Care",
             "Charm",
             "Cool",
+            "Endurance",
             "Evaluate",
             "Gossip",
             "Haggle",
-            "Language (Arnsmen)",
-            "Language (Thien)",
+            "Language (Any)",
             "Lore (Local)",
             "Melee (Basic)",
             "Outdoor Survival",
@@ -274,7 +325,7 @@ Hooks.on("setup", () => {
             "Stealth (Any)",
             "Trade (Cook)"
         ],
-        "drude": [
+        "vodya": [
             "Athletics",
             "Climb",
             "Endurance",
@@ -292,7 +343,7 @@ Hooks.on("setup", () => {
 
     WFRP4E.speciesTalents = {
         "human": [
-            "Doomed",
+            "Doomed, random[1]",
             "Savvy, Suave",
             3
         ],
@@ -311,7 +362,7 @@ Hooks.on("setup", () => {
             "Small",
             2
         ],
-        "drude": [
+        "vodya": [
             "Acute Sense (Sight)",
             "Hardy, Sixth Sense",
             "Night Vision",
@@ -325,35 +376,35 @@ Hooks.on("setup", () => {
         "human": 4,
         "rogatyy": 6,
         "guzik": 3,
-        "drude": 5,
+        "vodya": 5,
     }
 
     WFRP4E.speciesFate = {
         "human": 2,
         "rogatyy": 0,
         "guzik": 2,
-        "drude": 0,
+        "vodya": 0,
     }
 
     WFRP4E.speciesRes = {
         "human": 1,
         "rogatyy": 3,
         "guzik": 0,
-        "drude": 0,
+        "vodya": 0,
     }
 
     WFRP4E.speciesExtra = {
         "human": 3,
         "rogatyy": 1,
         "guzik": 2,
-        "drude": 2
+        "vodya": 2
     }
 
     WFRP4E.speciesAge = {
         "human": "15+1d10",
         "rogatyy": "20+10d10",
         "guzik": "15+5d10",
-        "drude": "30+10d10",
+        "vodya": "30+10d10",
     }
 
     WFRP4E.speciesHeight = {
@@ -372,7 +423,7 @@ Hooks.on("setup", () => {
             inches: 1,
             die: "1d10"
         },
-        "drude": {
+        "vodya": {
             feet: 5,
             inches: 11,
             die: "1d10"
